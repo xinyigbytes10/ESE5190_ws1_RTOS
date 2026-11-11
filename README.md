@@ -40,7 +40,7 @@ Since 75% < 77.98%, the task set is RM schedulable.
 
 ### Scheduling Diagram
 
-![](images\R1.png)
+![](images/R1.png)
 
 
 
@@ -49,9 +49,9 @@ All tasks meet their deadlines. The original task set is schedulable under RMS, 
 
 
 I1:
-![I1](images\I1.png)
+![I1](images/I1.png)
 The oscilloscope shows that Task A, B, and C have different pulse widths and periods, approximately following the expected RMS scheduling behavior. Some HIGH pulses overlap, which is expected in the preemptive implementation because tasks release the CPU during vTaskDelay(). Small timing differences may result from the FreeRTOS tick resolution, watchdog timer accuracy, and task scheduling delays.
 
 I2: 
-![I2](images\I2.png)
+![I2](images/I2.png)
 The oscilloscope shows the output signals of Task A (blue), Task B (yellow), and Task C (green). The HIGH pulses do not overlap, indicating that only one task executes at a time, as expected in the RMS blocking implementation. Some timing differences occur because tasks must wait for other tasks to finish before executing.
