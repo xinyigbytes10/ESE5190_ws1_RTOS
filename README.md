@@ -43,5 +43,8 @@ All tasks meet their deadlines. The original task set is schedulable under RMS, 
 
 
 I1:
-![](images\I1.png)
+![I1](images\I1.png)
 
+
+I2: 
+![I2](images\I2.png)
