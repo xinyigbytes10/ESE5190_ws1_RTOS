@@ -2,7 +2,7 @@
 
 * Name: Xinyi Gong
 * GitHub username: xinyigbytes10
-* GitHub Repository URL: 
+* GitHub Repository URL: https://github.com/xinyigbytes10/ESE5190_ws1_RTOS
 * Description of hardware: (embedded hardware, laptop, etc) 
 
 The hardware setup includes an ATmega328PB microcontroller, three LEDs with current-limiting resistors, a laptop running MPLAB X IDE, and a Keysight oscilloscope to measure the output signals.
