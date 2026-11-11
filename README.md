@@ -5,7 +5,13 @@
 * GitHub Repository URL: 
 * Description of hardware: (embedded hardware, laptop, etc) 
 
+The hardware setup includes an ATmega328PB microcontroller, three LEDs with current-limiting resistors, a laptop running MPLAB X IDE, and a Keysight oscilloscope to measure the output signals.
 
+PB0 → Task A (Blue / CH3): 150 ms ON, 750 ms period.
+
+PB1 → Task B (Yellow / CH1): 300 ms ON, 1200 ms period.
+
+PB2 → Task C (Green / CH2): 450 ms ON, 1500 ms period.
 
 
 
@@ -44,7 +50,8 @@ All tasks meet their deadlines. The original task set is schedulable under RMS, 
 
 I1:
 ![I1](images\I1.png)
-
+The oscilloscope shows that Task A, B, and C have different pulse widths and periods, approximately following the expected RMS scheduling behavior. Some HIGH pulses overlap, which is expected in the preemptive implementation because tasks release the CPU during vTaskDelay(). Small timing differences may result from the FreeRTOS tick resolution, watchdog timer accuracy, and task scheduling delays.
 
 I2: 
 ![I2](images\I2.png)
+The oscilloscope shows the output signals of Task A (blue), Task B (yellow), and Task C (green). The HIGH pulses do not overlap, indicating that only one task executes at a time, as expected in the RMS blocking implementation. Some timing differences occur because tasks must wait for other tasks to finish before executing.
