@@ -46,7 +46,7 @@ Since 75% < 77.98%, the task set is RM schedulable.
 
 All tasks meet their deadlines. The original task set is schedulable under RMS, so Task B's CPU time does not need to be changed.
 
-![](images\R1(2).png)
+![](images/R1(2).png)
 
 ## I1:
 
